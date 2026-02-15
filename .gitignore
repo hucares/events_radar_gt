@@ -4,6 +4,9 @@
 .beads/
 .logs/
 
+# Scraper output
+scrapers/output/
+
 # Python
 __pycache__/
 *.py[cod]

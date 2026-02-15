@@ -22,3 +22,12 @@ class Event(BaseModel):
     price: str | None = None
     created_at: datetime | None = None
     updated_at: datetime | None = None
+
+
+class ScrapeResult(BaseModel):
+    """Wraps a scrape run's output with metadata."""
+
+    source: str
+    scraped_at: datetime
+    event_count: int
+    events: list[Event]
