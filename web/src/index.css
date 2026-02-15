@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply bg-gray-50 text-gray-900 antialiased;
+}
+
+@layer components {
+  .filter-select {
+    @apply rounded border border-gray-300 bg-white px-3 py-1.5 text-sm shadow-sm
+      focus:border-nyc-sky focus:outline-none focus:ring-1 focus:ring-nyc-sky;
+  }
+  .filter-input {
+    @apply rounded border border-gray-300 bg-white px-3 py-1.5 text-sm shadow-sm
+      focus:border-nyc-sky focus:outline-none focus:ring-1 focus:ring-nyc-sky;
+  }
+}
